@@ -34,12 +34,12 @@ A **C++ template-based library** implementing common data structures with generi
 
 Linux / Ubuntu
 
-g++ generalised_ds_library.cpp -o myexe
+g++ main.cpp -o myexe
 ./myexe
 
 Windows (MinGW)
 
-g++ generalised_ds_library.cpp -o myexe
+g++ main.cpp -o myexe
 myexe
 
 # 💻 Example Usage

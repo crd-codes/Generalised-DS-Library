@@ -1,10 +1,10 @@
 # 🗂️ Generalised Data Structure Library
+# 📌 Project Overview
 
 A **C++ template-based library** implementing common data structures with generic programming. Supports **Singly & Doubly Linked Lists (linear & circular), Stack, and Queue** with all basic operations. Designed for **learning, testing, and real-world applications**.
 
 ---
-
-## 🚀 Features
+# 🚀 Features
 
 - **Singly Linear & Circular Linked List**  
   Insert, delete, and traverse at any position.
@@ -21,19 +21,37 @@ A **C++ template-based library** implementing common data structures with generi
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 - **Language:** C++  
-- **Concepts:** Templates, Linked Lists, Stacks, Queues, Circular & Doubly Linked Lists, Object-Oriented Programming
-
+- **Concepts:** Object-Oriented Programming (OOP)
+                Generic Programming using Templates
+                Data Structures (Linked Lists, Stack, Queue)
+                Dynamic Memory Management
 ---
 
-## 📌 Sample Usage
+# ⚙️ Compilation & Execution
 
-### Singly Linked List
-```cpp
-SinglyLLL<int> *obj = new SinglyLLL<int>();
-obj->InsertFirst(10);
-obj->InsertLast(20);
-obj->Display();   // Output: | 10 |-> | 20 |-> NULL
-delete obj;
+Linux / Ubuntu
+
+g++ generalised_ds_library.cpp -o myexe
+./myexe
+
+Windows (MinGW)
+
+g++ generalised_ds_library.cpp -o myexe
+myexe
+
+💻 Example Usage
+ 
+
+# 📈 Future Improvements
+
+Implement Binary Search Tree (BST)
+
+Add sorting and searching algorithms
+
+
+# 👨‍💻 Author
+
+CR Dugade (crd-codes)

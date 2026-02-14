@@ -1,5 +1,4 @@
 #include<iostream>
-using namespace std;
 
 //////////////////////////////////////////////////////////////////////
 //          Singly Linear LL using Generic Approach
@@ -43,7 +42,7 @@ class SinglyLLL
 template <class T>
 SinglyLLL<T> :: SinglyLLL()
 {
-    cout<<"Singly Linear LL gets created\n";
+    std::cout<<"Singly Linear LL gets created\n";
     this->first = NULL;
     this->iCountNode = 0;
 }
@@ -162,10 +161,10 @@ void SinglyLLL<T> :: Display()
 
     for(iCnt = 1; iCnt <= this->iCountNode; iCnt++)  
     {
-        cout<<"| "<<temp->data<<" |->";
+        std::cout<<"| "<<temp->data<<" |->";
         temp = temp->next;
     }
-    cout<<"NULL\n";            
+    std::cout<<"NULL\n";            
 }
 
 template <class T>
@@ -184,7 +183,7 @@ void SinglyLLL<T> :: InsertAtPos(T no, int pos)
 
     if(pos < 1 || pos > this->iCountNode+1)
     {
-        cout<<"Invalid Position\n";
+        std::cout<<"Invalid Position\n";
         return;
     }
 
@@ -224,7 +223,7 @@ void SinglyLLL<T> :: DeleteAtPos(int pos)
 
     if(pos < 1 || pos > this->iCountNode)
     {
-        cout<<"Invalid position";
+        std::cout<<"Invalid position";
     }
 
     if(pos == 1)
@@ -288,7 +287,7 @@ class SinglyCLL
 template <class T>
 SinglyCLL<T>::SinglyCLL()
 {
-    cout<<"Singly Circular LL gets created\n";
+    std::cout<<"Singly Circular LL gets created\n";
 
     this->first = NULL;
     this->last = NULL;
@@ -420,11 +419,11 @@ void SinglyCLL<T>::Display()
 
     do
     {
-        cout<<"| "<<temp->data<<" | -> ";
+        std::cout<<"| "<<temp->data<<" | -> ";
         temp = temp -> next;
     } while (temp != last ->next);
     
-    cout<<"\n";
+    std::cout<<"\n";
 }
 
 template <class T>
@@ -443,7 +442,7 @@ void SinglyCLL<T>::DeleteAtPos(int pos)
     
     if(pos < 1 || pos > iCount)
     {
-        cout<<"Invalid position\n";
+        std::cout<<"Invalid position\n";
         return;
     }
 
@@ -483,7 +482,7 @@ void SinglyCLL<T>::InsertAtPos(T no, int pos)
 
     if(pos < 1 || pos > iCount+1)
     {
-        cout<<"Invalid position\n";
+        std::cout<<"Invalid position\n";
         return;
     }
 
@@ -562,7 +561,7 @@ class DoublyLLL
 template<class T>
 DoublyLLL<T> :: DoublyLLL()
 {
-    cout<<"Doubly Linked LL gets created\n";
+    std::cout<<"Doubly Linked LL gets created\n";
 
     this->first = NULL;
     this->iCount = 0;
@@ -625,7 +624,7 @@ void DoublyLLL<T> :: InsertAtPos(T no,int pos)
 
     if((pos < 1) || (pos > this->iCount+1))   
     {
-        cout<<"Invalid Position\n";
+        std::cout<<"Invalid Position\n";
         return;
     }
 
@@ -715,7 +714,7 @@ void DoublyLLL<T> :: DeleteAtPos(int pos)
 
     if((pos < 1) || (pos > this->iCount))   
     {
-        cout<<"Invalid Position\n";
+        std::cout<<"Invalid Position\n";
         return;
     }
 
@@ -750,13 +749,13 @@ void DoublyLLL<T> :: Display()
     DoublyLLLnode<T> *temp = NULL;
     temp = this->first;
 
-    cout<<"\nNULL";
+    std::cout<<"\nNULL";
     while(temp != NULL)
     {
-        cout<<"| "<<temp->data<<" |<=>";
+        std::cout<<"| "<<temp->data<<" |<=>";
         temp = temp->next;
     }
-    cout<<"NuLL\n";
+    std::cout<<"NuLL\n";
 }
 
 template<class T>
@@ -800,7 +799,7 @@ class DoublyCLL
 template <class T>
 DoublyCLL<T>::DoublyCLL()
 {
-    cout<<"Doubly Circular LL gets created\n";
+    std::cout<<"Doubly Circular LL gets created\n";
 
     this->first = NULL;
     this->last = NULL;
@@ -943,11 +942,11 @@ void DoublyCLL<T>::Display()
 
     do
     {
-        cout<<"| "<<temp->data<<" | -> ";
+        std::cout<<"| "<<temp->data<<" | -> ";
         temp = temp -> next;
     } while (temp != last -> next);
     
-    cout<<"\n";
+    std::cout<<"\n";
 }
 
 template <class T>
@@ -966,7 +965,7 @@ void DoublyCLL<T>::DeleteAtPos(int pos)
     
     if(pos < 1 || pos > iCount)
     {
-        cout<<"Invalid position\n";
+        std::cout<<"Invalid position\n";
         return;
     }
 
@@ -1007,7 +1006,7 @@ void DoublyCLL<T>::InsertAtPos(T no, int pos)
 
     if(pos < 1 || pos > iCount+1)
     {
-        cout<<"Invalid position\n";
+        std::cout<<"Invalid position\n";
         return;
     }
 
@@ -1082,7 +1081,7 @@ class Stack
 template<class T>
 Stack<T> :: Stack()
 {
-    cout<<"Stack gets created successfully\n";
+    std::cout<<"Stack gets created successfully\n";
 
     this->first = NULL;
     this->iCount = 0;
@@ -1109,7 +1108,7 @@ T Stack<T> :: pop()
 
     if(this->first == NULL)
     {
-        cout<<"Stack is empty\n";
+        std::cout<<"Stack is empty\n";
         return -1;
     }
 
@@ -1130,7 +1129,7 @@ T Stack<T> :: peep()
 
     if(this->first == NULL)
     {
-        cout<<"Stack is empty\n";
+        std::cout<<"Stack is empty\n";
         return -1;
     }
 
@@ -1146,13 +1145,13 @@ void Stack<T> :: Display()
 
     if(this->first == NULL)
     {
-        cout<<"Stack is empty\n";
+        std::cout<<"Stack is empty\n";
         return;
     }
 
     while(temp != NULL)
     {
-        cout<<"|\t"<<temp->data<<"\t|\n";
+        std::cout<<"|\t"<<temp->data<<"\t|\n";
         temp = temp->next;
     }
 }
@@ -1202,7 +1201,7 @@ class Queue
 template <class T>
 Queue<T> :: Queue()
 {
-    cout<<"Queue gets created successfully\n";
+    std::cout<<"Queue gets created successfully\n";
 
     this->first = NULL;
     this->last = NULL;
@@ -1239,7 +1238,7 @@ T Queue<T> :: dequeue()
 
     if(this->first == NULL && this->last == NULL)
     {
-        cout<<"Queue is empty\n";
+        std::cout<<"Queue is empty\n";
         return -1;
     }
 
@@ -1265,16 +1264,16 @@ void Queue<T> :: Display()
 
     if(this->first == NULL && this->last == NULL)
     {
-        cout<<"Queue is empty\n";
+        std::cout<<"Queue is empty\n";
         return;
     }
 
     while(temp != NULL)
     {
-        cout<<"| "<<temp->data<<"| -";
+        std::cout<<"| "<<temp->data<<"| -";
         temp = temp->next;
     }
-    cout<<"\n";
+    std::cout<<"\n";
 }
 
 template <class T>

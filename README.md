@@ -1,10 +1,12 @@
 # 🗂️ Generalised Data Structure Library
-# 📌 Project Overview
+
+## 📌 Project Overview
 
 A **C++ template-based library** implementing common data structures with generic programming. Supports **Singly & Doubly Linked Lists (linear & circular), Stack, and Queue** with all basic operations. Designed for **learning, testing, and real-world applications**.
 
 ---
-# 🚀 Features
+
+## 🚀 Features
 
 - **Singly Linear & Circular Linked List**  
   Insert, delete, and traverse at any position.
@@ -18,10 +20,10 @@ A **C++ template-based library** implementing common data structures with generi
   Supports multiple data types (int, char, double, etc.) using templates.
 - **Comprehensive Testing**  
   Sample `main()` demonstrates all operations for each data structure.
-
+  
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - **Language:** C++  
 - **Concepts:** Object-Oriented Programming (OOP)
@@ -30,7 +32,18 @@ A **C++ template-based library** implementing common data structures with generi
                 Dynamic Memory Management
 ---
 
-# ⚙️ Compilation & Execution
+## 📂 Project Structure
+```
+Generalised-DS-Library/
+│
+├── Src/
+│   ├── generalised_ds_library.h   → Header file with all data structure templates
+│   └── main.cpp                   → Main file demonstrating usage
+└── README.md
+```
+---
+
+## ⚙️ Compilation & Execution
 
 Linux / Ubuntu
 
@@ -42,7 +55,7 @@ Windows (MinGW)
 g++ main.cpp -o myexe
 myexe
 
-# 💻 Example Usage
+## 💻 Example Usage
 ```
 #include <iostream>
 #include "generalised_ds_library.h"
@@ -89,13 +102,19 @@ int main() {
 }
 ``` 
 
-# 📈 Future Improvements
+## 📈 Future Improvements
 
 Implement Binary Search Tree (BST)
 
 Add sorting and searching algorithms
 
+---
+## 👨‍💻 Author
 
-# 👨‍💻 Author
+CR Dugade 
+Aspiring Software Developer
 
-CR Dugade (crd-codes)
+GitHub: https://github.com/crd-codes
+LinkedIn: https://linkedin.com/in/chakradhar-dugade
+Email : crofficialuse@gmail.com 
+

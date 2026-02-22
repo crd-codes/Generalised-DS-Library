@@ -571,6 +571,7 @@ class DoublyLLL
 
     public:    
         DoublyLLL();
+        ~DoublyLLL();
 
         void InsertFirst(T);
         void InsertLast(T);
@@ -591,6 +592,15 @@ DoublyLLL<T> :: DoublyLLL()
 
     this->first = NULL;
     this->iCount = 0;
+}
+
+template<class T>
+DoublyLLL<T> :: ~DoublyLLL()
+{
+    while(iCount != 0)
+    {
+        DeleteFirst();
+    }
 }
 
 template<class T>
@@ -812,6 +822,8 @@ class DoublyCLL
 
     public:
         DoublyCLL();
+        ~DoublyCLL();
+
         void InsertFirst(T no);
         void InsertLast(T no);
         void DeleteFirst();
@@ -830,6 +842,15 @@ DoublyCLL<T>::DoublyCLL()
     this->first = NULL;
     this->last = NULL;
     this->iCount = 0;
+}
+
+template <class T>
+DoublyCLL :: ~DoublyCLL()
+{
+    while(iCount != 0)
+    {
+        DeleteFirst();
+    }
 }
 
 template <class T>

@@ -289,6 +289,8 @@ class SinglyCLL
 
     public:
         SinglyCLL();
+        ~SinglyCLL();
+
         void InsertFirst(T no);
         void InsertLast(T no);
         void DeleteFirst();
@@ -307,6 +309,15 @@ SinglyCLL<T>::SinglyCLL()
     this->first = NULL;
     this->last = NULL;
     this->iCount = 0;
+}
+
+template <class T>
+SinglyCLL<T> :: ~SinglyCLL()
+{
+    while(iCount !=0)
+    {
+        DeleteFirst();
+    }
 }
 
 template <class T>

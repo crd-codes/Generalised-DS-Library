@@ -1113,7 +1113,7 @@ T Stack<T> :: pop()
     if(this->first == NULL)
     {
         std::cout<<"Stack is empty\n";
-        return -1;
+        return T();
     }
 
     Value = this->first->data;
@@ -1134,7 +1134,7 @@ T Stack<T> :: peep()
     if(this->first == NULL)
     {
         std::cout<<"Stack is empty\n";
-        return -1;
+        return T();
     }
 
     Value = this->first->data;
@@ -1243,7 +1243,7 @@ T Queue<T> :: dequeue()
     if(this->first == NULL && this->last == NULL)
     {
         std::cout<<"Queue is empty\n";
-        return -1;
+        return T();
     }
 
     Value = this->first->data;

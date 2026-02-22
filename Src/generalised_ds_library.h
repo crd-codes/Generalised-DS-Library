@@ -1301,7 +1301,7 @@ void Queue<T> :: enqueue(T no)
 template <class T>
 T Queue<T> :: dequeue()
 {
-    T Value = 0;
+    T Value{};
     Queuenode<T> *temp = this->first;
 
     if(this->first == NULL && this->last == NULL)

@@ -31,6 +31,8 @@ class SinglyLLL
 
     public:    
         SinglyLLL();
+        ~SinglyLLL();
+
         void InsertFirst(T);  
         void InsertLast(T);
         void DeleteFirst();
@@ -48,6 +50,15 @@ SinglyLLL<T> :: SinglyLLL()
     std::cout<<"Singly Linear LL gets created\n";
     this->first = NULL;
     this->iCountNode = 0;
+}
+
+template <class T>
+SinglyLLL<T> :: ~SinglyLLL()
+{
+    while(iCountNode != 0)
+    {
+        DeleteFirst();
+    }
 }
 
 //////////////////////////////////////////////////////////////////////

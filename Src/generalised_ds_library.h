@@ -238,7 +238,7 @@ void SinglyLLL<T> :: DeleteAtPos(int pos)
     if(pos < 1 || pos > this->iCountNode)
     {
         std::cout<<"Invalid position\n";
-        return -1;
+        return;
     }
 
     if(pos == 1)
@@ -845,7 +845,7 @@ DoublyCLL<T>::DoublyCLL()
 }
 
 template <class T>
-DoublyCLL :: ~DoublyCLL()
+DoublyCLL<T> :: ~DoublyCLL()
 {
     while(iCount != 0)
     {
@@ -1269,7 +1269,7 @@ Queue<T> :: Queue()
 }
 
 template <class T>
-Queue<T> :: Queue()
+Queue<T> :: ~Queue()
 {
     while(iCount != 0)
     {

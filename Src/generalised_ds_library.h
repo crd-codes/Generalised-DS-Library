@@ -1117,6 +1117,7 @@ class Stack
 
     public:
         Stack();
+        ~Stack();
 
         void push(T);     
         T pop();          
@@ -1132,6 +1133,15 @@ Stack<T> :: Stack()
 
     this->first = NULL;
     this->iCount = 0;
+}
+
+template <class T>
+Stack<T> :: ~Stack()
+{
+    while(iCount != 0)
+    {
+        pop();
+    }
 }
 
 template<class T>
@@ -1239,6 +1249,8 @@ class Queue
 
     public:
         Queue();
+        ~Queue();
+
         void enqueue(T);      
         T dequeue();          
         void Display();
@@ -1254,6 +1266,15 @@ Queue<T> :: Queue()
     this->last = NULL;
 
     this->iCount = 0;
+}
+
+template <class T>
+Queue<T> :: Queue()
+{
+    while(iCount != 0)
+    {
+        dequeue();
+    }
 }
 
 template <class T>

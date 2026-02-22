@@ -529,8 +529,8 @@ class DoublyLLLnode
 {
     public:
         T data;
-        DoublyLLLnode *next;
-        DoublyLLLnode  *prev;
+        DoublyLLLnode<T> *next;
+        DoublyLLLnode<T> *prev;
 
         DoublyLLLnode(T no)
         {
@@ -1107,7 +1107,7 @@ void Stack<T> :: push(T no)
 template<class T>
 T Stack<T> :: pop()
 {
-    T Value = 0;
+    T Value{};
     Stacknode<T> *temp = this->first;
 
     if(this->first == NULL)
@@ -1129,7 +1129,7 @@ T Stack<T> :: pop()
 template<class T>
 T Stack<T> :: peep()
 {
-    T Value = 0;
+    T Value{};
 
     if(this->first == NULL)
     {

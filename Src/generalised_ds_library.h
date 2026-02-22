@@ -226,7 +226,8 @@ void SinglyLLL<T> :: DeleteAtPos(int pos)
 
     if(pos < 1 || pos > this->iCountNode)
     {
-        std::cout<<"Invalid position";
+        std::cout<<"Invalid position\n";
+        return -1;
     }
 
     if(pos == 1)
